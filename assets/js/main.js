@@ -91,7 +91,8 @@ function scrollActive() {
 window.addEventListener('scroll', scrollActive)
 
 /*=============== LIGHT DARK THEME ===============*/
-const themeButton = document.getElementById('theme-button')
+const themeButton = document.getElementById('theme-button');
+const themeToggleBtn = document.getElementById('theme-toggle-btn');
 const lightTheme = 'light-theme'
 const iconTheme = 'bx-sun'
 
@@ -110,15 +111,20 @@ if (selectedTheme) {
     themeButton.classList[selectedIcon === 'bx bx-moon' ? 'add' : 'remove'](iconTheme)
 }
 
-// Activate / deactivate the theme manually with the button
-themeButton.addEventListener('click', () => {
-    // Add or remove the light / icon theme
-    document.body.classList.toggle(lightTheme)
-    themeButton.classList.toggle(iconTheme)
-    // We save the theme and the current icon that the user chose
-    localStorage.setItem('selected-theme', getCurrentTheme())
-    localStorage.setItem('selected-icon', getCurrentIcon())
-})
+
+// Activate / deactivate the theme manually with the button or Enter key
+function toggleTheme() {
+    document.body.classList.toggle(lightTheme);
+    themeButton.classList.toggle(iconTheme);
+    localStorage.setItem('selected-theme', getCurrentTheme());
+    localStorage.setItem('selected-icon', getCurrentIcon());
+}
+themeToggleBtn.addEventListener('click', toggleTheme);
+themeButton.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' || e.key === ' ') {
+        toggleTheme();
+    }
+});
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 const sr = ScrollReveal({

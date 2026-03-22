@@ -197,7 +197,9 @@ body.light-theme {
 
 .grid {
   display: grid;
-  gap: 1.25rem;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  align-items: stretch;
 }
 
 .main {
@@ -745,17 +747,55 @@ body.light-theme {
 }
 .work__card {
   background-color: var(--container-color);
-  padding: 1rem;
-  border-radius: 1rem;
+  padding: 1.5rem 1.25rem 1.5rem 1.25rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  transition: transform 0.3s cubic-bezier(.25,.8,.25,1), box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 420px;
+  max-width: 420px;
+  margin: 0 auto;
+  position: relative;
+  overflow: visible;
+}
+
+.work__card:hover {
+  transform: translateY(-10px) scale(1.03) rotateX(2deg);
+  box-shadow: 0 16px 40px 0 rgba(31, 38, 135, 0.22);
+  z-index: 2;
+}
 }
 .work__img {
   border-radius: 1rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 260px;
+  height: 160px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .work__title {
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-medium);
-  margin-bottom: 0.25rem;
+  font-size: 1.15rem;
+  font-weight: var(--font-semibold);
+  margin-bottom: 0.5rem;
+  text-align: center;
+  width: 100%;
+  word-break: break-word;
+.work__desc {
+  font-size: 0.98rem;
+  color: var(--text-color-light);
+  margin-bottom: 1.1rem;
+  text-align: center;
+  min-height: 60px;
+  width: 100%;
+  word-break: break-word;
+}
 }
 
 .work__button {
@@ -765,6 +805,30 @@ body.light-theme {
   display: flex;
   align-items: center;
   column-gap: 0.25rem;
+  background: rgba(80,80,255,0.07);
+  padding: 0.5rem 1.2rem;
+  border-radius: 2rem;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(80,80,255,0.07);
+  margin-top: auto;
+  margin-bottom: 0.5rem;
+  transition: background 0.2s, color 0.2s;
+@media screen and (max-width: 900px) {
+  .work__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .work__card {
+    max-width: 95vw;
+    min-height: 380px;
+  }
+}
+}
+
+.work__button:hover {
+  background: var(--first-color);
+  color: #fff;
+}
 }
 
 .work__button:hover .work__icon {

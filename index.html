@@ -25,7 +25,7 @@
     <!--=============== HEADER ===============-->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo">Rachana</a>
+            <a href="#home" class="nav__logo">Rachana</a>
 
             <div class="nav__menu">
                 <ul class="nav__list">
@@ -57,7 +57,9 @@
                 </ul>
             </div>
             <!-- Theme Change Button -->
-            <i class='bx bx-moon change-theme' id="theme-button"></i>
+            <button id="theme-toggle-btn" aria-label="Toggle dark/light mode" title="Toggle dark/light mode" style="background:none;border:none;outline:none;cursor:pointer;">
+                <i class='bx bx-moon change-theme' id="theme-button" tabindex="0"></i>
+            </button>
         </nav>
     </header>
 
@@ -123,13 +125,13 @@
                         <div class="about__box">
                             <i class='bx bx-award about__icon'></i>
                             <h3 class="about__title">Experience</h3>
-                            <span class="about__subtitle">10+ Months</span>
+                            <span class="about__subtitle">34+ Months</span>
                         </div>
 
                         <div class="about__box">
                             <i class="bx bx-briefcase-alt about__icon"></i>
                             <h3 class="about__title">Projects</h3>
-                            <span class="about__subtitle">20+ Completed</span>
+                            <span class="about__subtitle">6+ Completed</span>
                         </div>
 
                         <div class="about__box">
@@ -210,195 +212,71 @@
         </section>
 
         <!--=============== SKILLS ===============-->
-
-            <span class="section__subtitle">My abilities</span>
-            <h2 class="section__title">My Experience</h2>
-
+        <section class="skills section" id="skills">
+            <span class="section__subtitle">Technical Skills</span>
+            <h2 class="section__title">My Skills</h2>
             <div class="skills__container container grid">
                 <div class="skills__content">
-                    <h3 class="skills__title">Frontend Developer</h3>
-
+                    <h3 class="skills__title">Languages & Frameworks</h3>
                     <div class="skills__box">
                         <div class="skills__group">
-                            <div class="skills__data">
-                                <i class="bx bxs-badge-check"></i>
-
-                                <div class="">
-                                    <h3 class="skills__name">HTML5</h3>
-                                    <span class="skills__level">Intermediate</span>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <i class="bx bxs-badge-check"></i>
-
-                                <div class="">
-                                    <h3 class="skills__name">Angular</h3>
-                                    <span class="skills__level">Intermediate</span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <i class="bx bxs-badge-check"></i>
-
-                                <div class="">
-                                    <h3 class="skills__name">CSS</h3>
-                                    <span class="skills__level">Intermediate</span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <i class="bx bxs-badge-check"></i>
-
-                                <div class="">
-                                    <h3 class="skills__name">JavaScript</h3>
-                                    <span class="skills__level">Intermediate</span>
-                                </div>
-                            </div>
+                            <div class="skills__data"><i class="bx bxs-badge-check"></i><div><h3 class="skills__name">TypeScript</h3></div></div>
+                            <div class="skills__data"><i class="bx bxs-badge-check"></i><div><h3 class="skills__name">JavaScript</h3></div></div>
+                            <div class="skills__data"><i class="bx bxs-badge-check"></i><div><h3 class="skills__name">Java</h3></div></div>
+                            <div class="skills__data"><i class="bx bxs-badge-check"></i><div><h3 class="skills__name">SQL</h3></div></div>
                         </div>
-
                         <div class="skills__group">
-                            <div class="skills__data">
-                                <i class="bx bxs-badge-check"></i>
-
-                                <div class="">
-                                    <h3 class="skills__name">Bootstrap</h3>
-                                    <span class="skills__level">Intermediate</span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <i class="bx bxs-badge-check"></i>
-
-                                <div class="">
-                                    <h3 class="skills__name">Git</h3>
-                                    <span class="skills__level">Intermediate</span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <i class="bx bxs-badge-check"></i>
-
-                                <div class="">
-                                    <h3 class="skills__name">Type Script</h3>
-                                    <span class="skills__level">Intermediate</span>
-                                </div>
-                            </div>
-
-
+                            <div class="skills__data"><i class="bx bxs-badge-check"></i><div><h3 class="skills__name">Angular 11-19</h3></div></div>
+                            <div class="skills__data"><i class="bx bxs-badge-check"></i><div><h3 class="skills__name">HTML5</h3></div></div>
+                            <div class="skills__data"><i class="bx bxs-badge-check"></i><div><h3 class="skills__name">CSS3</h3></div></div>
+                            <div class="skills__data"><i class="bx bxs-badge-check"></i><div><h3 class="skills__name">RxJS</h3></div></div>
+                            <div class="skills__data"><i class="bx bxs-badge-check"></i><div><h3 class="skills__name">PrimeNG</h3></div></div>
+                            <div class="skills__data"><i class="bx bxs-badge-check"></i><div><h3 class="skills__name">Bootstrap</h3></div></div>
+                            <div class="skills__data"><i class="bx bxs-badge-check"></i><div><h3 class="skills__name">MapBox</h3></div></div>
+                            <div class="skills__data"><i class="bx bxs-badge-check"></i><div><h3 class="skills__name">Canvas API</h3></div></div>
                         </div>
                     </div>
                 </div>
-
                 <div class="skills__content">
-                    <h3 class="skills__title">Backend Developer</h3>
-
+                    <h3 class="skills__title">Backend & Tools</h3>
                     <div class="skills__box">
                         <div class="skills__group">
-                            <div class="skills__data">
-                                <i class="bx bxs-badge-check"></i>
-
-                                <div class="">
-                                    <h3 class="skills__name">Java</h3>
-                                    <span class="skills__level">Intermediate</span>
-                                </div>
-                            </div>
+                            <div class="skills__data"><i class="bx bxs-badge-check"></i><div><h3 class="skills__name">Spring Boot</h3></div></div>
+                            <div class="skills__data"><i class="bx bxs-badge-check"></i><div><h3 class="skills__name">RESTful APIs</h3></div></div>
+                            <div class="skills__data"><i class="bx bxs-badge-check"></i><div><h3 class="skills__name">Postman</h3></div></div>
+                            <div class="skills__data"><i class="bx bxs-badge-check"></i><div><h3 class="skills__name">Git</h3></div></div>
+                            <div class="skills__data"><i class="bx bxs-badge-check"></i><div><h3 class="skills__name">GitHub</h3></div></div>
+                            <div class="skills__data"><i class="bx bxs-badge-check"></i><div><h3 class="skills__name">Docker</h3></div></div>
+                            <div class="skills__data"><i class="bx bxs-badge-check"></i><div><h3 class="skills__name">SonarQube</h3></div></div>
+                            <div class="skills__data"><i class="bx bxs-badge-check"></i><div><h3 class="skills__name">MS Office</h3></div></div>
                         </div>
                         <div class="skills__group">
-                            <div class="skills__data">
-                                <i class="bx bxs-badge-check"></i>
-
-                                <div class="">
-                                    <h3 class="skills__name">Laravel</h3>
-                                    <span class="skills__level">Intermediate</span>
-                                </div>
-                            </div>
-                             <div class="skills__group">
-                            <div class="skills__data">
-                                <i class="bx bxs-badge-check"></i>
-
-                                <div class="">
-                                    <h3 class="skills__name">SQL</h3>
-                                    <span class="skills__level">Intermediate</span>
-                                </div>
-                            </div>
-                            </div>
-                            </div>
-                            </div>
-                            </div>
-                            </div>
-
+                            <div class="skills__data"><i class="bx bxs-badge-check"></i><div><h3 class="skills__name">Agile (Scrum)</h3></div></div>
+                            <div class="skills__data"><i class="bx bxs-badge-check"></i><div><h3 class="skills__name">Component-Driven Development</h3></div></div>
+                            <div class="skills__data"><i class="bx bxs-badge-check"></i><div><h3 class="skills__name">Code Reviews</h3></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         </section>
 
         <!--=============== WORK ===============-->
         <section class="work section" id="work">
-            <span class="section__subtitle">My Portfolio</span>
+            <span class="section__subtitle">Featured Projects</span>
             <h2 class="section__title">Recent Works</h2>
-
-            <div class="work__filters">
-                <span class="work__item active-work" data-filter="all">All</span>
-                <span class="work__item" data-filter=".web">Web</span>
-                <span class="work__item" data-filter=".movil">Movil</span>
-                <span class="work__item" data-filter=".design">Design</span>
-            </div>
-
             <div class="work__container container grid">
                 <div class="work__card mix web">
-                    <img src="assets/img/work1.jpg" alt="" class="work__img">
-
-                    <h3 class="work__title">Web Design</h3>
-
-                    <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt"></i>
-                    </a>
-                </div>
-
-                <div class="work__card mix movil">
-                    <img src="assets/img/work2.jpg" alt="" class="work__img">
-
-                    <h3 class="work__title">App Movile</h3>
-
-                    <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt"></i>
-                    </a>
-                </div>
-
-                <div class="work__card mix design">
-                    <img src="assets/img/work3.jpg" alt="" class="work__img">
-
-                    <h3 class="work__title">Brand Design</h3>
-
-                    <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt"></i>
-                    </a>
-                </div>
-
-                <div class="work__card mix web">
-                    <img src="assets/img/work4.jpg" alt="" class="work__img">
-
-                    <h3 class="work__title">Web Design</h3>
-
-                    <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt"></i>
-                    </a>
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Container Ship - Smart Navigator" class="work__img">
+                    <h3 class="work__title">Smart Navigator</h3>
+                    <p class="work__desc">End-to-end digital logistics platform for real-time global shipment visibility. Features interactive map-based tracking, predictive ETA, and analytics dashboards.</p>
+                    <a href="https://navigator.bdpsmart.com" class="work__button" target="_blank">Live Demo <i class="bx bx-right-arrow-alt"></i></a>
                 </div>
                 <div class="work__card mix web">
-                    <img src="assets/img//work5.png" alt="" class="work__img">
-
-                    <h3 class="work__title">web application</h3>
-
-                    <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt"></i>
-                    </a>
-                </div>
-
-                <div class="work__card mix movil">
-                    <img src="assets/img/work6.png" alt="" class="work__img">
-
-                    <h3 class="work__title">App Movil</h3>
-
-                    <a href="#" class="work__button">
-                        Demo <i class="bx bx-right-arrow-alt"></i>
-                    </a>
+                    <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Cargo Containers - D&D Management" class="work__img">
+                    <h3 class="work__title">Detention & Demurrage (D&D) Management</h3>
+                    <p class="work__desc">Monitors global container detention/demurrage charges, real-time shipment status, fee forecasting, and risk assessment. Enables proactive container management.</p>
+                    <a href="https://dndtest.bdpsmart.com/#/app/home" class="work__button" target="_blank">Live Demo <i class="bx bx-right-arrow-alt"></i></a>
                 </div>
             </div>
         </section>
